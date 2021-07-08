@@ -1,4 +1,9 @@
-## How To guide
+## Java Buildpack Demo
+
+This project allows to build a Java Application as a container image using the 
+[java buildpacks client library](https://github.com/snowdrop/java-buildpack-client), docker and Buildpacks.
+
+## Howto guide
 
 - Start first your docker daemon locally ;-)
 - Next, launch the java main class using the following command
