@@ -57,3 +57,7 @@ This project allows to build a Java Application as a container image using the
   2021-07-08T10:30:14.062250177Z Layer 'dev.snowdrop.buildpacks.buildpack:m2repo' SHA: sha256:839269354d6f685668650e54738210c9c381663d796400ab6d09b1efda33fdc3
   [dev.snowdrop.demo.JavaBuildPackExample.main()] INFO dev.snowdrop.buildpack.BuildpackBuilderImpl - Buildpack build complete, with exit code 0
   ```
+- Finally, create a container using the buildpacks built image
+  ```bash
+  docker run -d -p 8080:8080 --name springboot snowdrop/java-app:latest
+  ```
